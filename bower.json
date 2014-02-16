@@ -1,0 +1,12 @@
+{
+  "name": "Archetype-u-colorkit",
+  "version": "0.1.0",
+  "author": "Sam Ashley",
+  "main": "test/_test.scss",
+  "ignore": [
+    ".*",
+    "CHANGELOG.md",
+    "package.json",
+    "/test"
+  ]
+}

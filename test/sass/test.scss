@@ -1,0 +1,105 @@
+/**
+ * Archetype-test
+ *
+ * test page styles
+ *
+ */
+
+
+/**
+ * Gray-scale values
+ */
+$gray: darken(white, 35%);
+$gray-dark: darken($gray, 10%);
+$gray-light: lighten($gray, 10%);
+$gray-lighter: lighten($gray, 20%);
+$gray-lightest: lighten($gray, 30%);
+
+/**
+ * Testing page reset styles
+ */
+body {
+  color: $gray-dark;
+}
+
+a {
+  color: blue;
+  &:visited { 
+    color: blue; 
+  }
+  &:hover { 
+    color: darken(blue, 10%); 
+  } 
+  &:focus { 
+    color: blue; 
+  }
+}
+
+/**
+ * Test Header
+ */
+.test-header--structure {
+  padding: 20px;
+  margin: 20px 0 0 0;
+}
+
+.test-header--skin {
+  font-size: 2em;
+  font-family: helvetica, sans-serif;
+  color: $gray;
+}
+
+/**
+ * Test Title
+ */
+.test-title--structure {
+  padding: 20px;
+  margin: 20px 0 0 0;
+  border-left: 5px solid;
+  font-size: 1.5em;
+}
+
+.test-title--skin {
+  font-family: helvetica, sans-serif;
+  background: $gray-lightest;
+  color: $gray;
+  border-left-color: $gray-light;
+}
+
+/**
+ * Test Description
+ *
+ * Styles for the test description detailing the test's expectation
+ */
+.test-description--structure {
+  margin: 0 0 1em 0;
+  padding: 0 1em 1em 2em;
+  border-left: 5px solid;
+  font-size: 1em;
+}
+
+.test-description--skin {
+  background: $gray-lightest;
+  border-left-color: $gray-light;
+  color: $gray;
+  font-family: helvetica, sans-serif;
+  font-weight: normal;
+  font-style: italic;
+}
+
+/**
+ * Test
+ *
+ * 1. setting a max width here because testing text specific styles (ie wrapping etc..)
+ */
+.test--structure {
+  margin: 1em 0 1em 2em;
+  padding: .5em;
+  max-width: 400px;   /* 1 */
+}
+
+.test--skin {
+  background: $gray-lighter;
+  border: 1px solid $gray;
+}
+

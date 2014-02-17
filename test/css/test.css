@@ -1,0 +1,110 @@
+/**
+ * Archetype-test
+ *
+ * test page styles
+ *
+ */
+/**
+ * Gray-scale values
+ */
+/**
+ * Testing page reset styles
+ */
+/* line 21, ../sass/test.scss */
+body {
+  color: #8c8c8c;
+}
+
+/* line 25, ../sass/test.scss */
+a {
+  color: blue;
+}
+/* line 27, ../sass/test.scss */
+a:visited {
+  color: blue;
+}
+/* line 30, ../sass/test.scss */
+a:hover {
+  color: #0000cc;
+}
+/* line 33, ../sass/test.scss */
+a:focus {
+  color: blue;
+}
+
+/**
+ * Test Header
+ */
+/* line 41, ../sass/test.scss */
+.test-header--structure {
+  padding: 20px;
+  margin: 20px 0 0 0;
+}
+
+/* line 46, ../sass/test.scss */
+.test-header--skin {
+  font-size: 2em;
+  font-family: helvetica, sans-serif;
+  color: #a6a6a6;
+}
+
+/**
+ * Test Title
+ */
+/* line 55, ../sass/test.scss */
+.test-title--structure {
+  padding: 20px;
+  margin: 20px 0 0 0;
+  border-left: 5px solid;
+  font-size: 1.5em;
+}
+
+/* line 62, ../sass/test.scss */
+.test-title--skin {
+  font-family: helvetica, sans-serif;
+  background: #f2f2f2;
+  color: #a6a6a6;
+  border-left-color: #bfbfbf;
+}
+
+/**
+ * Test Description
+ *
+ * Styles for the test description detailing the test's expectation
+ */
+/* line 74, ../sass/test.scss */
+.test-description--structure {
+  margin: 0 0 1em 0;
+  padding: 0 1em 1em 2em;
+  border-left: 5px solid;
+  font-size: 1em;
+}
+
+/* line 81, ../sass/test.scss */
+.test-description--skin {
+  background: #f2f2f2;
+  border-left-color: #bfbfbf;
+  color: #a6a6a6;
+  font-family: helvetica, sans-serif;
+  font-weight: normal;
+  font-style: italic;
+}
+
+/**
+ * Test
+ *
+ * 1. setting a max width here because testing text specific styles (ie wrapping etc..)
+ */
+/* line 95, ../sass/test.scss */
+.test--structure {
+  margin: 1em 0 1em 2em;
+  padding: .5em;
+  max-width: 400px;
+  /* 1 */
+}
+
+/* line 101, ../sass/test.scss */
+.test--skin {
+  background: #d9d9d9;
+  border: 1px solid #a6a6a6;
+}

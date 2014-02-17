@@ -10,3 +10,89 @@
 .test__u-textCenter {
 }
 
+
+/**
+* Adjust the color scheme by changing the $key-color variable
+*  */
+$key-color: red;
+
+/**
+*  * Pen styles
+*   */
+body { color: #999; font-style: sans-serif; padding: 0 10px 0 10px;}
+
+/**
+*  * Import Compass 
+*   */
+@import "compass";
+
+/**
+* Force border-box sizing for everything
+*/
+*,
+*:after,
+*:before { @include box-sizing(border-box); }
+
+/**
+* Grid Rows and Units
+*/
+%row {@include pie-clearfix; padding: 0;}
+%unit{float:left; padding: 0;}
+
+%size1of6 {width: 16.666666%;}
+%size1of8 {width: 12.5%;}
+%size7of8 {width: 87.5%;}
+/**
+* color swatch styles
+*
+*/
+@include color-scheme-pallet($key-color);
+$color-swatch-height: 2em;
+/**
+* Swatches
+*/
+$swatch-border: 4px solid white;
+$swatch-shadow: 0px 0px 6px 0px rgba(0,0,0,.25);
+$swatch-margin: .5%;
+
+
+.tint-stack,
+.tone-stack,
+.shade-stack {
+  @extend %row;
+}
+
+.tint-stack div,
+.tone-stack div,
+.shade-stack div {    //  layout styles for value stacks
+  @extend %unit;
+  //@extend %size1of6;
+  width: ( 99% - ( $swatch-margin * ( 5 ) ) ) / 6;
+  height: $color-swatch-height;
+  margin-right: $swatch-margin;
+}
+
+.tone-stack div,
+.shade-stack div {    // vertical spacing for value stacks
+  margin-top: .25em;
+}
+
+.color-block {    //  container for the key color and color swatch
+  @extend %row;
+  border: $swatch-border;
+  box-shadow: $swatch-shadow;
+  margin-bottom: 1em;
+}
+
+.pure-color-swatch {    // the color scheme's key color
+  @extend %unit;
+  //@extend %size1of8;
+  width: ( 23% - ( $swatch-margin * ( 1 ) ) ) / 2;
+  height: .5em + ($color-swatch-height * 3);
+  margin-right: $swatch-margin;
+}
+
+.color-swatch {    // container for tint/tone/shade stacks
+  @extend %unit;
+  @extend %size7of8;
+}

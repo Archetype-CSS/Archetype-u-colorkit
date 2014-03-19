@@ -7,12 +7,6 @@ Archetype utility for building harmonious color schemes in Sass.
   * Git: `git clone https://github.com/Archetype-CSS/u-colorkit.git`
 
 ## Use
-  * `test-title--structure` - structure styles for the test title
-  * `test-title--skin` - skin styles for the test title
-  * `test-description--structure` - structure styles for the test description
-  * `test-description--skin` - skin styles for the test description
-  * `test--structure` - structure styles for the test
-  * `test--skin` - skin styles for the test
 
 ## Run the Test Locally
 

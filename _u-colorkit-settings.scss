@@ -2,14 +2,7 @@
 /**
  * Color Pallet
  * 
- * global color settings
  */
-
-/**
- * Import Colorkit
- * 
- */
-@import "colorkit";
 
 /**
  * Color Scheme
@@ -25,41 +18,38 @@ $base-color: red;
 @include color-scheme($color-relationship, $base-color);
 
 /**
- * Black and White
+ * Color Pallet
  */
-$white:                             white(0);
-$black:                             black(0);
-
-/**
- * Shadow and Highlight
- */
-$highlight-color:                   alpha-white(.5)!default;
-$shadow-color:                      alpha-black(.2) !default;
-
-/**
- * Semantic Utilities
- *
- * utility color variables to extend with semantic variable names
- */
-$strong:                            black(20%) !default;
-$subtle:                            black(60%) !default;
-$muted:                             black(70%) !default;
-$accent:                            $blue-green--tint-2;
+$colorPallet:(
+  white: white(0),
+  black: black(0),
+  highlight: alpha-white(.5),
+  shadow: alpha-black(.2),
+  strong: black(20%),
+  subtle: black(60%),
+  muted:  black(70%),
+  accent: $blue-green--tint-2,
+);
 
 /**
  * Text Colors
  */
-$strong-color--txt:                 $strong;
-$subtle-color--txt:                 $subtle;
-$muted-color--txt:                  $muted;
-$accent-color--txt:                 $blue-green--tint-6;
+$textColorPallet:(
+  strong: map-get($colorPallet, strong),
+  subtle: map-get($colorPallet, subtle),
+  muted: map-get($colorPallet, muted),
+  accent: map-get($colorPallet, accent),
+);
 
 /**
  * Background Colors
  */
-$strong-color--bg:                  $strong;
-$subtle-color--bg:                  $subtle;
-$muted-color--bg:                   $muted;
+$bgColorPallet:(
+  strong: map-get($colorPallet, strong),
+  subtle: map-get($colorPallet, subtle),
+  muted: map-get($colorPallet, muted),
+  accent: map-get($colorPallet, accent),
+);
 
 /**
  * Brand Colors
@@ -80,37 +70,75 @@ $muted-color--bg:                   $muted;
  * UI and State Colors
  *
  */
-$primary-color:                     $blue-green--tone-2 !default;
-$secondary-color:                   $blue-green--tone-4 !default;
-$tertiary-color:                    $blue-green--shade-2 !default; 
-$accent-color:                      $accent;
 
-$warning-color:                     $red-orange--tint-2 !default;
-$warning-color--txt:                tint($warning-color, 25%);
-$warning-color--bg:                 $warning-color;
-$warning-color--border:             darken(adjust-hue($warning-color, -10), 3%) !default;
-
-$error-color:                       $red--tint-2 !default;
-$error-color--txt:                  tint($error-color, 25%);
-$error-color--bg:                   $error-color;
-$error-color--border:               darken(adjust-hue($error-color, -10), 3%) !default;
-
-$success-color:                     $green--tint-2 !default;
-$success-color--txt:                tint($success-color, 25%);
-$success-color--bg:                 $success-color;
-$success-color--border:             darken(adjust-hue($success-color, -10), 5%) !default;
-
-$info-color:                        $blue-green--tint-2 !default;
-$info-color--txt:                   tint($info-color, 25%);
-$info-color--bg:                    $info-color;
-$info-color--border:                darken(adjust-hue($info-color, -10), 7%) !default;
-
-/**
- * Label Colors
- */
-$label--default--color-bg:          $info-color--bg;
-$label--positive--color-bg:         $success-color--bg;
-$label--negative--color-bg:         $error-color--bg;
-$label--warning--color-bg:          $warning-color--bg;
-
+$uiColorPallet:(
+  base:(
+    primary: $blue-green--tone-2,
+    secondary: $blue-green--tone-4,
+    info: $blue-green--shade-2,
+    success: $green--tint-2,
+    warning: $red-orange--tint-2,
+    error: $red--tint-2,
+  ); 
+  primary:(
+    //text:
+    //background:
+    //border:
+    hoverState:(
+      //text:
+      //background:
+      //border:
+    );
+  );
+  secondary:(
+    //text:
+    //background:
+    //border:
+    hoverState:(
+      //text:
+      //background:
+      //border:
+    );
+  );
+  info:(
+    text: tint(map-get(map-get($uiColorPallet, base), info), 25%),
+    background: map-get(map-get($uiColorPallet, base), info),
+    border: darken(adjust-hue(map-get(map-get($uiColorPallet, base), info), -10), 7%),
+    hoverState:(
+      //text:
+      //background:
+      //border:
+    );
+  );
+  warning:(
+    text: tint($warning-color, 25%),
+    background: map-get($uiColorPallet, base), warning);
+    border: darken(adjust-hue(map-get(map-get($uiColorPallet, base), warning), -10), 3%),
+    hoverState:(
+      //text:
+      //background:
+      //border:
+    );
+  );
+  error:(
+    text: tint(map-get(map-get($uiColorPallet, base), error), 25%),
+    background: map-get(map-get($uiColorPallet, base), error),
+    border: darken(adjust-hue(map-get($uiColorPallet, base), error), 3%),
+    hoverState:(
+      //text:
+      //background:
+      //border:
+    );
+  );
+  success:(
+    text: tint(map-get(map-get($uiColorPallet, base), success), 25%),
+    background: map-get(map-get($uiColorPallet, base), success),
+    border: darken(adjust-hue(map-get(map-get($uiColorPallet, base), success), -10), 5%),
+    hoverState:(
+      //text:
+      //background:
+      //border:
+    );
+  );
+);
 

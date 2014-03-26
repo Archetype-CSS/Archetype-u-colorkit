@@ -3,19 +3,17 @@
  * Color Pallet
  * 
  */
-
+//@import "u-colorkit";
 /**
  * Color Scheme
  * 
  * Generate harmonious color scheme based on a single key-color ($base-color)
- *
+ * @include color-scheme($base-color, $color-relationship);
  * $base-color: any CSS color value or keyword
  * $color-relationship: monochromatic/complementary/spit-complementary/analogous/triadic/tetradic/quadradic
  * $color-angle: (defaults to 30)
  */
-$color-relationship: double-complementary;
-$base-color: red;
-@include color-scheme($color-relationship, $base-color);
+@include color-scheme(double-complementary, red);
 
 /**
  * Color Pallet
@@ -79,7 +77,7 @@ $uiColorPallet:(
     success: $green--tint-2,
     warning: $red-orange--tint-2,
     error: $red--tint-2,
-  ); 
+  ),
   primary:(
     //text:
     //background:
@@ -88,8 +86,8 @@ $uiColorPallet:(
       //text:
       //background:
       //border:
-    );
-  );
+    ),
+  ),
   secondary:(
     //text:
     //background:
@@ -98,8 +96,8 @@ $uiColorPallet:(
       //text:
       //background:
       //border:
-    );
-  );
+    ),
+  ),
   info:(
     text: tint(map-get(map-get($uiColorPallet, base), info), 25%),
     background: map-get(map-get($uiColorPallet, base), info),
@@ -108,18 +106,18 @@ $uiColorPallet:(
       //text:
       //background:
       //border:
-    );
-  );
+    ),
+  ),
   warning:(
     text: tint($warning-color, 25%),
-    background: map-get($uiColorPallet, base), warning);
+    background: map-get(($uiColorPallet, base), warning),
     border: darken(adjust-hue(map-get(map-get($uiColorPallet, base), warning), -10), 3%),
     hoverState:(
       //text:
       //background:
       //border:
-    );
-  );
+    ),
+  ),
   error:(
     text: tint(map-get(map-get($uiColorPallet, base), error), 25%),
     background: map-get(map-get($uiColorPallet, base), error),
@@ -128,8 +126,8 @@ $uiColorPallet:(
       //text:
       //background:
       //border:
-    );
-  );
+    ),
+  ),
   success:(
     text: tint(map-get(map-get($uiColorPallet, base), success), 25%),
     background: map-get(map-get($uiColorPallet, base), success),
@@ -138,7 +136,7 @@ $uiColorPallet:(
       //text:
       //background:
       //border:
-    );
-  );
+    ),
+  ),
 );
 

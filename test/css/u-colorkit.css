@@ -1,4 +1,5 @@
 /**
+**
  * Test: Archetype/u-text.scss
  *
  */
@@ -288,7 +289,7 @@
 /**
 *  * Pen styles
 *   */
-/* line 22, ../sass/u-colorkit.scss */
+/* line 23, ../sass/u-colorkit.scss */
 body {
   color: #999;
   font-style: sans-serif;
@@ -301,7 +302,7 @@ body {
 /**
 * Force border-box sizing for everything
 */
-/* line 32, ../sass/u-colorkit.scss */
+/* line 33, ../sass/u-colorkit.scss */
 *,
 *:after,
 *:before {
@@ -313,14 +314,14 @@ body {
 /**
 * Grid Rows and Units
 */
-/* line 39, ../sass/u-colorkit.scss */
+/* line 40, ../sass/u-colorkit.scss */
 .tint-stack,
 .tone-stack,
 .shade-stack, .color-block {
   *zoom: 1;
   padding: 0;
 }
-/* line 38, ../../../../../../.rvm/rubies/ruby-1.9.3-p448/lib/ruby/gems/1.9.1/gems/compass-core-1.0.0.alpha.17/stylesheets/compass/utilities/general/_clearfix.scss */
+/* line 38, ../../../../../../.rvm/gems/ruby-1.9.3-p448@global/gems/compass-core-1.0.0.alpha.19/stylesheets/compass/utilities/general/_clearfix.scss */
 .tint-stack:after,
 .tone-stack:after,
 .shade-stack:after, .color-block:after {
@@ -329,7 +330,7 @@ body {
   clear: both;
 }
 
-/* line 40, ../sass/u-colorkit.scss */
+/* line 41, ../sass/u-colorkit.scss */
 .tint-stack div,
 .tone-stack div,
 .shade-stack div, .pure-color-swatch, .color-swatch {
@@ -337,7 +338,7 @@ body {
   padding: 0;
 }
 
-/* line 44, ../sass/u-colorkit.scss */
+/* line 45, ../sass/u-colorkit.scss */
 .color-swatch {
   width: 87.5%;
 }
@@ -2493,7 +2494,7 @@ body {
 /**
 * Swatches
 */
-/* line 65, ../sass/u-colorkit.scss */
+/* line 66, ../sass/u-colorkit.scss */
 .tint-stack div,
 .tone-stack div,
 .shade-stack div {
@@ -2502,20 +2503,20 @@ body {
   margin-right: 0.5%;
 }
 
-/* line 75, ../sass/u-colorkit.scss */
+/* line 76, ../sass/u-colorkit.scss */
 .tone-stack div,
 .shade-stack div {
   margin-top: .25em;
 }
 
-/* line 80, ../sass/u-colorkit.scss */
+/* line 81, ../sass/u-colorkit.scss */
 .color-block {
   border: 4px solid white;
   box-shadow: 0px 0px 6px 0px rgba(0, 0, 0, 0.25);
   margin-bottom: 1em;
 }
 
-/* line 87, ../sass/u-colorkit.scss */
+/* line 88, ../sass/u-colorkit.scss */
 .pure-color-swatch {
   width: 11.25%;
   height: 6.5em;

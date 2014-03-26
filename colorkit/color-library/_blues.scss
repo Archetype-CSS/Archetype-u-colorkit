@@ -3,41 +3,41 @@
  * 
  */
 
-$blue: #0000FF !default;
+$blue: #0000FF !global;
 
 /**
  * Tints
  */
-$blue--tint-stack: tint-stack($blue, $sixths);
+$blue--tint-stack: tint-stack($blue, $sixths) !global;
 
-$blue--tint-1: nth($blue--tint-stack, 2);
-$blue--tint-2: nth($blue--tint-stack, 3);
-$blue--tint-3: nth($blue--tint-stack, 4);
-$blue--tint-4: nth($blue--tint-stack, 5);
-$blue--tint-5: nth($blue--tint-stack, 6);
-$blue--tint-6: nth($blue--tint-stack, 7);
+$blue--tint-1: nth($blue--tint-stack, 2) !global;
+$blue--tint-2: nth($blue--tint-stack, 3) !global;
+$blue--tint-3: nth($blue--tint-stack, 4) !global;
+$blue--tint-4: nth($blue--tint-stack, 5) !global;
+$blue--tint-5: nth($blue--tint-stack, 6) !global;
+$blue--tint-6: nth($blue--tint-stack, 7) !global;
 
 /**
  * Tones
  */
-$blue--tone-stack: tone-stack($blue, $sixths);
+$blue--tone-stack: tone-stack($blue, $sixths) !global;
 
-$blue--tone-1: nth($blue--tone-stack, 2);
-$blue--tone-2: nth($blue--tone-stack, 3);
-$blue--tone-3: nth($blue--tone-stack, 4);
-$blue--tone-4: nth($blue--tone-stack, 5);
-$blue--tone-5: nth($blue--tone-stack, 6);
-$blue--tone-6: nth($blue--tone-stack, 7);
+$blue--tone-1: nth($blue--tone-stack, 2) !global;
+$blue--tone-2: nth($blue--tone-stack, 3) !global;
+$blue--tone-3: nth($blue--tone-stack, 4) !global;
+$blue--tone-4: nth($blue--tone-stack, 5) !global;
+$blue--tone-5: nth($blue--tone-stack, 6) !global;
+$blue--tone-6: nth($blue--tone-stack, 7) !global;
 
 /**
  * Shades
  */
-$blue--shade-stack: shade-stack($blue, $sixths);
+$blue--shade-stack: shade-stack($blue, $sixths) !global;
 
-$blue--shade-1: nth($blue--shade-stack, 2);
-$blue--shade-2: nth($blue--shade-stack, 3);
-$blue--shade-3: nth($blue--shade-stack, 4);
-$blue--shade-4: nth($blue--shade-stack, 5);
-$blue--shade-5: nth($blue--shade-stack, 6);
-$blue--shade-6: nth($blue--shade-stack, 7);
+$blue--shade-1: nth($blue--shade-stack, 2) !global;
+$blue--shade-2: nth($blue--shade-stack, 3) !global;
+$blue--shade-3: nth($blue--shade-stack, 4) !global;
+$blue--shade-4: nth($blue--shade-stack, 5) !global;
+$blue--shade-5: nth($blue--shade-stack, 6) !global;
+$blue--shade-6: nth($blue--shade-stack, 7) !global;
 

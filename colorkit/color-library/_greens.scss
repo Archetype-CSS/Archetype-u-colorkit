@@ -3,41 +3,41 @@
  * 
  */
 
-$green: #008800 !default;
+$green: #008800 !global;
 
 /**
  * Tints
  */
-$green--tint-stack: tint-stack($green, $sixths);
+$green--tint-stack: tint-stack($green, $sixths) !global;
 
-$green--tint-1: nth($green--tint-stack, 2);
-$green--tint-2: nth($green--tint-stack, 3);
-$green--tint-3: nth($green--tint-stack, 4);
-$green--tint-4: nth($green--tint-stack, 5);
-$green--tint-5: nth($green--tint-stack, 6);
-$green--tint-6: nth($green--tint-stack, 7);
+$green--tint-1: nth($green--tint-stack, 2) !global;
+$green--tint-2: nth($green--tint-stack, 3) !global;
+$green--tint-3: nth($green--tint-stack, 4) !global;
+$green--tint-4: nth($green--tint-stack, 5) !global;
+$green--tint-5: nth($green--tint-stack, 6) !global;
+$green--tint-6: nth($green--tint-stack, 7) !global;
 
 /**
  * Tones
  */
-$green--tone-stack: tone-stack($green, $sixths);
+$green--tone-stack: tone-stack($green, $sixths) !global;
 
-$green--tone-1: nth($green--tone-stack, 2);
-$green--tone-2: nth($green--tone-stack, 3);
-$green--tone-3: nth($green--tone-stack, 4);
-$green--tone-4: nth($green--tone-stack, 5);
-$green--tone-5: nth($green--tone-stack, 6);
-$green--tone-6: nth($green--tone-stack, 7);
+$green--tone-1: nth($green--tone-stack, 2) !global;
+$green--tone-2: nth($green--tone-stack, 3) !global;
+$green--tone-3: nth($green--tone-stack, 4) !global;
+$green--tone-4: nth($green--tone-stack, 5) !global;
+$green--tone-5: nth($green--tone-stack, 6) !global;
+$green--tone-6: nth($green--tone-stack, 7) !global;
 
 /**
  * Shades
  */
-$green--shade-stack: shade-stack($green, $sixths);
+$green--shade-stack: shade-stack($green, $sixths) !global;
 
-$green--shade-1: nth($green--shade-stack, 2);
-$green--shade-2: nth($green--shade-stack, 3);
-$green--shade-3: nth($green--shade-stack, 4);
-$green--shade-4: nth($green--shade-stack, 5);
-$green--shade-5: nth($green--shade-stack, 6);
-$green--shade-6: nth($green--shade-stack, 7);
+$green--shade-1: nth($green--shade-stack, 2) !global;
+$green--shade-2: nth($green--shade-stack, 3) !global;
+$green--shade-3: nth($green--shade-stack, 4) !global;
+$green--shade-4: nth($green--shade-stack, 5) !global;
+$green--shade-5: nth($green--shade-stack, 6) !global;
+$green--shade-6: nth($green--shade-stack, 7) !global;
 

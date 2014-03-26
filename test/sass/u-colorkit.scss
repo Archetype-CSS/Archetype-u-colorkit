@@ -15,7 +15,7 @@
 /**
 * Adjust the color scheme by changing the $key-color variable
 *  */
-$key-color: red;
+$key-color: red !global;
 
 /**
 *  * Pen styles

@@ -14,45 +14,53 @@
  */
 @include color-scheme(double-complementary, red);
 
-
-$uiBasePallet:(
-  primary: $blue-green--tone-2,
-  secondary: $blue-green--tone-4,
-  info: $blue-green--shade-2,
-  success: $green--tint-2,
-  warning: $red-orange--tint-2,
-  error: $red-orange--tone-2
+/**
+ * Base Pallet
+ *
+ * use this pallet to easily derive color pallet variables from
+ */
+$basePallet:(
+  $uiColor: (
+    primary: $blue-green--tone-2,
+    secondary: $blue-green--tone-4,
+    info: $blue-green--shade-2,
+    success: $green--tint-2,
+    warning: $red-orange--tint-2,
+    error: $red-orange--tone-2
+  ),
+  $baseColor: (
+    white: white(0),
+    black: black(0),
+    highlight: alpha-white(.5),
+    shadow: alpha-black(.2),
+    strong: black(20%),
+    subtle: black(60%),
+    muted:  black(70%),
+    accent: $blue-green--tint-5,
+  )
 );
 
 /**
  * Color Pallet
  */
 $colorPallet:(
-  white: white(0),
-  black: black(0),
-  highlight: alpha-white(.5),
-  shadow: alpha-black(.2),
-  strong: black(20%),
-  subtle: black(60%),
-  muted:  black(70%),
-  accent: $blue-green--tint-2,
   /**
    * Text Colors
    */
   textColor:(
-    strong: map-get($colorPallet, strong),
-    subtle: map-get($colorPallet, subtle),
-    muted: map-get($colorPallet, muted),
-    accent: map-get($colorPallet, accent),
+    strong: _u-deepGet($basePallet, $baseColor, strong),
+    subtle: _u-deepGet($basePallet, $baseColor, subtle),
+    muted: _u-deepGet($basePallet, $baseColor, muted),
+    accent: _u-deepGet($basePallet, $baseColor, accent),
   ),
   /**
    * Background Colors
    */
   $bgColor:(
-    strong: map-get($colorPallet, strong),
-    subtle: map-get($colorPallet, subtle),
-    muted: map-get($colorPallet, muted),
-    accent: map-get($colorPallet, accent),
+    strong: _u-deepGet($basePallet, $baseColor, strong),
+    subtle: _u-deepGet($basePallet, $baseColor, subtle),
+    muted: _u-deepGet($basePallet, $baseColor, muted),
+    accent: _u-deepGet($basePallet, $baseColor, accent),
   )
 );
 

@@ -1,4 +1,3 @@
-/*** @export "colorkit" css */
 /**
  * Color Pallet
  * 
@@ -15,6 +14,16 @@
  */
 @include color-scheme(double-complementary, red);
 
+
+$uiBasePallet:(
+  primary: $blue-green--tone-2,
+  secondary: $blue-green--tone-4,
+  info: $blue-green--shade-2,
+  success: $green--tint-2,
+  warning: $red-orange--tint-2,
+  error: $red-orange--tone-2
+);
+
 /**
  * Color Pallet
  */
@@ -27,26 +36,24 @@ $colorPallet:(
   subtle: black(60%),
   muted:  black(70%),
   accent: $blue-green--tint-2,
-);
-
-/**
- * Text Colors
- */
-$textColorPallet:(
-  strong: map-get($colorPallet, strong),
-  subtle: map-get($colorPallet, subtle),
-  muted: map-get($colorPallet, muted),
-  accent: map-get($colorPallet, accent),
-);
-
-/**
- * Background Colors
- */
-$bgColorPallet:(
-  strong: map-get($colorPallet, strong),
-  subtle: map-get($colorPallet, subtle),
-  muted: map-get($colorPallet, muted),
-  accent: map-get($colorPallet, accent),
+  /**
+   * Text Colors
+   */
+  textColor:(
+    strong: map-get($colorPallet, strong),
+    subtle: map-get($colorPallet, subtle),
+    muted: map-get($colorPallet, muted),
+    accent: map-get($colorPallet, accent),
+  ),
+  /**
+   * Background Colors
+   */
+  $bgColor:(
+    strong: map-get($colorPallet, strong),
+    subtle: map-get($colorPallet, subtle),
+    muted: map-get($colorPallet, muted),
+    accent: map-get($colorPallet, accent),
+  )
 );
 
 /**
@@ -69,73 +76,66 @@ $bgColorPallet:(
  *
  */
 
-$uiColorPallet:(
-  base:(
-    primary: $blue-green--tone-2,
-    secondary: $blue-green--tone-4,
-    info: $blue-green--shade-2,
-    success: $green--tint-2,
-    warning: $red-orange--tint-2,
-    error: $red--tint-2,
-  ),
+
+$uiPallet:(
   primary:(
-    //text:
-    //background:
-    //border:
+    text: darken(_u-deepGet($uiBasePallet, primary), 20%),
+    background: _u-deepGet($uiBasePallet, primary),
+    border: darken(_u-deepGet($uiBasePallet, primary), 20%),
     hoverState:(
-      //text:
-      //background:
-      //border:
+      text: darken(_u-deepGet($uiBasePallet, primary), 40%),
+      background: darken(_u-deepGet($uiBasePallet, primary), 40%),
+      border: darken(_u-deepGet($uiBasePallet, primary), 40%)
     ),
   ),
   secondary:(
-    //text:
-    //background:
-    //border:
+    text: darken(_u-deepGet($uiBasePallet, secondary), 20%),
+    background: _u-deepGet($uiBasePallet, secondary),
+    border: darken(_u-deepGet($uiBasePallet, secondary), 20%),
     hoverState:(
-      //text:
-      //background:
-      //border:
+      text: darken(_u-deepGet($uiBasePallet, secondary), 40%),
+      background: darken(_u-deepGet($uiBasePallet, secondary), 40%),
+      border: darken(_u-deepGet($uiBasePallet, secondary), 40%)
     ),
   ),
   info:(
-    text: tint(map-get(map-get($uiColorPallet, base), info), 25%),
-    background: map-get(map-get($uiColorPallet, base), info),
-    border: darken(adjust-hue(map-get(map-get($uiColorPallet, base), info), -10), 7%),
+    text: darken(_u-deepGet($uiBasePallet, info), 20%),
+    background: _u-deepGet($uiBasePallet, info),
+    border: darken(_u-deepGet($uiBasePallet, info), 20%),
     hoverState:(
-      //text:
-      //background:
-      //border:
-    ),
-  ),
-  warning:(
-    text: tint($warning-color, 25%),
-    background: map-get(($uiColorPallet, base), warning),
-    border: darken(adjust-hue(map-get(map-get($uiColorPallet, base), warning), -10), 3%),
-    hoverState:(
-      //text:
-      //background:
-      //border:
-    ),
-  ),
-  error:(
-    text: tint(map-get(map-get($uiColorPallet, base), error), 25%),
-    background: map-get(map-get($uiColorPallet, base), error),
-    border: darken(adjust-hue(map-get($uiColorPallet, base), error), 3%),
-    hoverState:(
-      //text:
-      //background:
-      //border:
+      text: darken(_u-deepGet($uiBasePallet, info), 40%),
+      background: darken(_u-deepGet($uiBasePallet, info), 40%),
+      border: darken(_u-deepGet($uiBasePallet, info), 40%)
     ),
   ),
   success:(
-    text: tint(map-get(map-get($uiColorPallet, base), success), 25%),
-    background: map-get(map-get($uiColorPallet, base), success),
-    border: darken(adjust-hue(map-get(map-get($uiColorPallet, base), success), -10), 5%),
+    text: darken(_u-deepGet($uiBasePallet, success), 20%),
+    background: _u-deepGet($uiBasePallet, success),
+    border: darken(_u-deepGet($uiBasePallet, success), 20%),
     hoverState:(
-      //text:
-      //background:
-      //border:
+      text: darken(_u-deepGet($uiBasePallet, success), 40%),
+      background: darken(_u-deepGet($uiBasePallet, success), 40%),
+      border: darken(_u-deepGet($uiBasePallet, success), 40%)
+    ),
+  ),
+  warning:(
+    text: darken(_u-deepGet($uiBasePallet, warning), 20%),
+    background: _u-deepGet($uiBasePallet, warning),
+    border: darken(_u-deepGet($uiBasePallet, warning), 20%),
+    hoverState:(
+      text: darken(_u-deepGet($uiBasePallet, warning), 40%),
+      background: darken(_u-deepGet($uiBasePallet, warning), 40%),
+      border: darken(_u-deepGet($uiBasePallet, warning), 40%)
+    ),
+  ),
+  error:(
+    text: darken(_u-deepGet($uiBasePallet, error), 20%),
+    background: _u-deepGet($uiBasePallet, error),
+    border: darken(_u-deepGet($uiBasePallet, error), 20%),
+    hoverState:(
+      text: darken(_u-deepGet($uiBasePallet, error), 40%),
+      background: darken(_u-deepGet($uiBasePallet, error), 40%),
+      border: darken(_u-deepGet($uiBasePallet, error), 40%)
     ),
   ),
 );

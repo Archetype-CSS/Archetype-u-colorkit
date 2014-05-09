@@ -1,7 +1,31 @@
 /**
-**
  * Test: Archetype/u-text.scss
  *
+ */
+/**
+ * Component Constructor
+ *
+ * Used to provide a means for overriding default styles without redundant output
+ * Allows for the component to be package managed with a tool like bower
+ * without being tied to its predefined styles/settings for unit testing
+ *
+ * Sass v3.3.2 (Maptastic Maple)
+ * Compass (v1.0.0.alpha.19)
+ *
+ * 1. Component Constructor takes arguments, $map, and $key(s)
+ * 2. Loop over $map and find properties and values
+ * 3. Output 'property: value;'
+ * 4. Account for nested maps
+ *
+ */
+/**
+ * Deep Get (from Susy2)
+ * 
+ * Return a value deep in nested maps
+ * https://github.com/ericam/susy/blob/master/sass/susy/math/su/_maps.scss
+ */
+/** 
+ * Name Spaced Wrapper for Archetype
  */
 /**
  * Colorkit
@@ -279,6 +303,44 @@
  * Remember: the first value in the $tint-stack, $tone-stack, and $shade-stack
  * lists is the unadjusted color, meaning each stack includes the color which the
  * stack was derived from. The adjusted colors in the stack begin at 2.
+ */
+/**
+ * Color Pallet
+ * 
+ */
+/**
+ * Color Scheme
+ * 
+ * Generate harmonious color scheme based on a single key-color ($base-color)
+ * @include color-scheme($base-color, $color-relationship);
+ * $base-color: any CSS color value or keyword
+ * $color-relationship: monochromatic/complementary/spit-complementary/analogous/triadic/tetradic/quadradic
+ * $color-angle: (defaults to 30)
+ */
+/**
+ * Base Pallet
+ *
+ * use this pallet to easily derive color pallet variables from
+ */
+/**
+ * Color Pallet
+ */
+/**
+ * Brand Colors
+ *
+ * prefixed with '$brand-' to avoid proper color names for ease of use and to avoid collision with CSS color keywords
+ * ex: $brand-blue: deepskyblue; or: $brand-accent: tint($brand-blue, 12%);
+ */
+/**
+ * ex:
+ * $brand-blue:;
+ * $brand-primary:;
+ * $brand-secondary:;
+ * $brand-accent:;
+ */
+/**
+ * UI and State Colors
+ *
  */
 /**
  * example test class
@@ -2522,3 +2584,13 @@ body {
   height: 6.5em;
   margin-right: 0.5%;
 }
+
+/**
+ * More Tests
+ */
+/**
+ * Text Color Pallet Tests
+ */
+/**
+ * Background Color Tests
+ */

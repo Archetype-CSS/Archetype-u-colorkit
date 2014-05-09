@@ -1,10 +1,10 @@
 /**
-**
  * Test: Archetype/u-text.scss
  *
  */
-@import '../../_u-colorkit.scss';
-
+@import "../../bower_components/u-componentConstructor/_u-componentConstructor";
+@import "../../_u-colorkit";
+@import "../../_u-colorkit-settings";
 /**
  * example test class
  */
@@ -97,3 +97,29 @@ $swatch-margin: .5%;
   @extend %unit;
   @extend %size7of8;
 }
+
+
+/**
+ * More Tests
+ */
+
+/**
+ * Text Color Pallet Tests
+ */
+.test__textColor {
+  & .strong { color: _u-deepGet($colorPallet, baseColor, strong); }
+  & .subtle { color: _u-deepGet($colorPallet, baseColor, subtle); }
+  & .muted { color: _u-deepGet($colorPallet, baseColor, muted); }
+  & .accent { color: _u-deepGet($colorPallet, baseColor, accent); }
+}
+  
+/**
+ * Background Color Tests
+ */
+.test__bgColor {
+  & .strongBG { background-color: _u-deepGet($colorPallet, baseColor, strong); }
+  & .subtleBG { background-color: _u-deepGet($colorPallet, baseColor, subtle); }
+  & .mutedBG { background-color: _u-deepGet($colorPallet, baseColor, muted); }
+  & .accent { background-color: _u-deepGet($colorPallet, baseColor, accent); }
+}
+

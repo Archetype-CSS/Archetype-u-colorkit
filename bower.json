@@ -6,7 +6,6 @@
   "ignore": [
     ".*",
     "CHANGELOG.md",
-    "package.json",
-    "/test"
+    "package.json"
   ]
 }

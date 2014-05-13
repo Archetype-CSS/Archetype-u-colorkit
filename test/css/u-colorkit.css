@@ -343,6 +343,44 @@
  *
  */
 /**
+ * Color Pallet
+ * 
+ */
+/**
+ * Color Scheme
+ * 
+ * Generate harmonious color scheme based on a single key-color ($base-color)
+ * @include color-scheme($base-color, $color-relationship);
+ * $base-color: any CSS color value or keyword
+ * $color-relationship: monochromatic/complementary/spit-complementary/analogous/triadic/tetradic/quadradic
+ * $color-angle: (defaults to 30)
+ */
+/**
+ * Base Pallet
+ *
+ * use this pallet to easily derive color pallet variables from
+ */
+/**
+ * Color Pallet
+ */
+/**
+ * Brand Colors
+ *
+ * prefixed with '$brand-' to avoid proper color names for ease of use and to avoid collision with CSS color keywords
+ * ex: $brand-blue: deepskyblue; or: $brand-accent: tint($brand-blue, 12%);
+ */
+/**
+ * ex:
+ * $brand-blue:;
+ * $brand-primary:;
+ * $brand-secondary:;
+ * $brand-accent:;
+ */
+/**
+ * UI and State Colors
+ *
+ */
+/**
  * example test class
  */
 /**

@@ -1,4 +1,4 @@
-# u-colorkit [![Build Status](https://secure.travis-ci.org/Archetype-CSS/u-colorkit.png?branch=master)](http://travis-ci.org/Archetype-CSS/u-colorkit) [![Built with Grunt](https://cdn.gruntjs.com/builtwith.png)](http://gruntjs.com/)
+# u-colorkit [![Build Status](https://secure.travis-ci.org/Archetype-CSS/u-colorkit.png?branch=master)](http://travis-ci.org/Archetype-CSS/Archetype-u-colorkit) [![Built with Grunt](https://cdn.gruntjs.com/builtwith.png)](http://gruntjs.com/)
 
 Archetype utility for building harmonious color schemes in Sass.
 

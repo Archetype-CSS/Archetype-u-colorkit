@@ -384,25 +384,25 @@
  * example test class
  */
 /**
-* Adjust the color scheme by changing the $key-color variable
-*  */
+ * Adjust the color scheme by changing the $key-color variable
+ */
 /**
-*  * Pen styles
-*   */
-/* line 23, ../sass/u-colorkit.scss */
+ * Pen styles
+ */
+/* line 24, ../sass/u-colorkit.scss */
 body {
   color: #999;
-  font-style: sans-serif;
+  font-family: sans-serif;
   padding: 0 10px 0 10px;
 }
 
 /**
-*  * Import Compass 
-*   */
+ * Import Compass 
+ */
 /**
-* Force border-box sizing for everything
-*/
-/* line 33, ../sass/u-colorkit.scss */
+ * Force border-box sizing for everything
+ */
+/* line 35, ../sass/u-colorkit.scss */
 *,
 *:after,
 *:before {
@@ -412,9 +412,9 @@ body {
 }
 
 /**
-* Grid Rows and Units
-*/
-/* line 40, ../sass/u-colorkit.scss */
+ * Grid Rows and Units
+ */
+/* line 42, ../sass/u-colorkit.scss */
 .tint-stack,
 .tone-stack,
 .shade-stack, .color-block {
@@ -430,7 +430,7 @@ body {
   clear: both;
 }
 
-/* line 41, ../sass/u-colorkit.scss */
+/* line 43, ../sass/u-colorkit.scss */
 .tint-stack div,
 .tone-stack div,
 .shade-stack div, .pure-color-swatch, .color-swatch {
@@ -438,15 +438,15 @@ body {
   padding: 0;
 }
 
-/* line 45, ../sass/u-colorkit.scss */
+/* line 47, ../sass/u-colorkit.scss */
 .color-swatch {
   width: 87.5%;
 }
 
 /**
-* color swatch styles
-*
-*/
+ * color swatch styles
+ *
+ */
 /**
  * Monochromatic Color Scheme
  */
@@ -2592,9 +2592,9 @@ body {
 }
 
 /**
-* Swatches
-*/
-/* line 66, ../sass/u-colorkit.scss */
+ * Swatches
+ */
+/* line 70, ../sass/u-colorkit.scss */
 .tint-stack div,
 .tone-stack div,
 .shade-stack div {
@@ -2603,20 +2603,20 @@ body {
   margin-right: 0.5%;
 }
 
-/* line 76, ../sass/u-colorkit.scss */
+/* line 80, ../sass/u-colorkit.scss */
 .tone-stack div,
 .shade-stack div {
   margin-top: .25em;
 }
 
-/* line 81, ../sass/u-colorkit.scss */
+/* line 85, ../sass/u-colorkit.scss */
 .color-block {
   border: 4px solid white;
-  box-shadow: 0px 0px 6px 0px rgba(0, 0, 0, 0.25);
+  box-shadow: 0 0 6px 0 rgba(0, 0, 0, 0.25);
   margin-bottom: 1em;
 }
 
-/* line 88, ../sass/u-colorkit.scss */
+/* line 92, ../sass/u-colorkit.scss */
 .pure-color-swatch {
   width: 11.25%;
   height: 6.5em;

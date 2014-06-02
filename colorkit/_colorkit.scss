@@ -127,9 +127,9 @@ $default-tones:       $default-amounts        !global;
  */
 
 // initialize variables
-$complementary: null;
-$secondaryA: null;
-$secondaryB: null;
+$complementary: null !global;
+$secondaryA: null !global;
+$secondaryB: null !global;
 
 @mixin color-scheme(
 $color-relationship: "monochromatic",
@@ -139,34 +139,34 @@ $color-angle: 30) {
     $base-color: $base-color;
   }
 	@if $color-relationship == "complementary" {
-		$complementary: complement($base-color);
+		$complementary: complement($base-color) !global;
 	}
 	@if $color-relationship == "split-complementary" {
-		$secondaryA: adjust-hue($base-color, 180 + $color-angle);
-		$secondaryB: adjust-hue($base-color, 180 - $color-angle);
+		$secondaryA: adjust-hue($base-color, 180 + $color-angle) !global;
+		$secondaryB: adjust-hue($base-color, 180 - $color-angle) !global;
 	}
 	@if $color-relationship == "double-complementary" {
-		$secondaryA: adjust-hue($base-color, $color-angle);
-		$secondaryB: complement($secondaryA);
-		$complementary: complement($base-color);
+		$secondaryA: adjust-hue($base-color, $color-angle) !global;
+		$secondaryB: complement($secondaryA) !global;
+		$complementary: complement($base-color) !global;
 	}
 	@if $color-relationship == "triadic" {
-		$secondaryA: adjust-hue($base-color, 120);
-		$secondaryB: adjust-hue($base-color, -120);
+		$secondaryA: adjust-hue($base-color, 120) !global;
+		$secondaryB: adjust-hue($base-color, -120) !global;
 	}
 	@if $color-relationship == "analogous" {
-		$secondaryA: adjust-hue($base-color, $color-angle);
-		$secondaryB: adjust-hue($base-color, - $color-angle);
+		$secondaryA: adjust-hue($base-color, $color-angle) !global;
+		$secondaryB: adjust-hue($base-color, - $color-angle) !global;
 	}
 	@if $color-relationship == "tetradic" {
-		$secondaryA: adjust-hue($base-color, 300);
-		$secondaryB: complement($secondaryA);
-		$complementary: complement($base-color);
+		$secondaryA: adjust-hue($base-color, 300) !global;
+		$secondaryB: complement($secondaryA) !global;
+		$complementary: complement($base-color) !global;
 	}
 	@if $color-relationship == "quadradic" {
-		$secondaryA: adjust-hue($base-color, 90);
-		$secondaryB: complement($secondaryA);  
-		$complementary: complement($base-color);
+		$secondaryA: adjust-hue($base-color, 90) !global;
+		$secondaryB: complement($secondaryA) !global;  
+		$complementary: complement($base-color) !global;
 	}
 }
 

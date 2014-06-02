@@ -5,6 +5,7 @@
 @import "../../bower_components/Archetype-u-componentConstructor/_u-componentConstructor";
 @import "../../_u-colorkit";
 @import "../../_u-colorkit-settings";
+
 /**
  * example test class
  */
@@ -13,47 +14,50 @@
 
 
 /**
-* Adjust the color scheme by changing the $key-color variable
-*  */
+ * Adjust the color scheme by changing the $key-color variable
+ */
 $key-color: red !global;
 
 /**
-*  * Pen styles
-*   */
-body { color: #999; font-style: sans-serif; padding: 0 10px 0 10px;}
+ * Pen styles
+ */
+body { color: #999; font-family: sans-serif; padding: 0 10px 0 10px;}
 
 /**
-*  * Import Compass 
-*   */
+ * Import Compass 
+ */
 @import "compass";
 
 /**
-* Force border-box sizing for everything
-*/
+ * Force border-box sizing for everything
+ */
+
 *,
 *:after,
 *:before { @include box-sizing(border-box); }
 
 /**
-* Grid Rows and Units
-*/
+ * Grid Rows and Units
+ */
 %row {@include pie-clearfix; padding: 0;}
 %unit{float:left; padding: 0;}
 
 %size1of6 {width: 16.666666%;}
 %size1of8 {width: 12.5%;}
 %size7of8 {width: 87.5%;}
+
 /**
-* color swatch styles
-*
-*/
+ * color swatch styles
+ *
+ */
 @include color-scheme-pallet($key-color);
 $color-swatch-height: 2em;
+
 /**
-* Swatches
-*/
+ * Swatches
+ */
 $swatch-border: 4px solid white;
-$swatch-shadow: 0px 0px 6px 0px rgba(0,0,0,.25);
+$swatch-shadow: 0 0 6px 0 rgba(0,0,0,.25);
 $swatch-margin: .5%;
 
 

@@ -19,7 +19,7 @@
   "font-sizes": true,
   "font-faces": true,
   "floats": true,
-  "star-property-hack": true,
+  "star-property-hack": false,
   "outline-none": true,
   "import": true,
   "ids": true,
@@ -30,7 +30,7 @@
   "shorthand": true,
   "text-indent": true,
   "unique-headings": false,
-  "universal-selector": true,
+  "universal-selector": false,
   "unqualified-attributes": true,
   "vendor-prefix": false,
   "zero-units": true

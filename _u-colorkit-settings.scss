@@ -48,19 +48,19 @@ $colorPallet: (
    * Text Colors
    */
   textColor:(
-    strong: _u-deepGet($basePallet, baseColor, strong),
-    subtle: _u-deepGet($basePallet, baseColor, subtle),
-    muted: _u-deepGet($basePallet, baseColor, muted),
-    accent: _u-deepGet($basePallet, baseColor, accent),
+    strong: u-deepGet($basePallet, baseColor, strong),
+    subtle: u-deepGet($basePallet, baseColor, subtle),
+    muted: u-deepGet($basePallet, baseColor, muted),
+    accent: u-deepGet($basePallet, baseColor, accent),
   ),
   /**
    * Background Colors
    */
   bgColor:(
-    strong: _u-deepGet($basePallet, baseColor, strong),
-    subtle: _u-deepGet($basePallet, baseColor, subtle),
-    muted: _u-deepGet($basePallet, baseColor, muted),
-    accent: _u-deepGet($basePallet, baseColor, accent),
+    strong: u-deepGet($basePallet, baseColor, strong),
+    subtle: u-deepGet($basePallet, baseColor, subtle),
+    muted: u-deepGet($basePallet, baseColor, muted),
+    accent: u-deepGet($basePallet, baseColor, accent),
   )
 );
 
@@ -87,63 +87,63 @@ $colorPallet: (
 
 $uiPallet:(
   primary:(
-    text: darken(_u-deepGet($basePallet, uiColor, primary), 20%),
-    background: _u-deepGet($basePallet, uiColor, primary),
-    border: darken(_u-deepGet($basePallet, uiColor, primary), 20%),
+    text: darken(u-deepGet($basePallet, uiColor, primary), 20%),
+    background: u-deepGet($basePallet, uiColor, primary),
+    border: darken(u-deepGet($basePallet, uiColor, primary), 20%),
     hoverState:(
-      text: darken(_u-deepGet($basePallet, uiColor, primary), 40%),
-      background: darken(_u-deepGet($basePallet, uiColor, primary), 40%),
-      border: darken(_u-deepGet($basePallet, uiColor, primary), 40%)
+      text: darken(u-deepGet($basePallet, uiColor, primary), 40%),
+      background: darken(u-deepGet($basePallet, uiColor, primary), 40%),
+      border: darken(u-deepGet($basePallet, uiColor, primary), 40%)
     ),
   ),
   secondary:(
-    text: darken(_u-deepGet($basePallet, uiColor, secondary), 20%),
-    background: _u-deepGet($basePallet, uiColor, secondary),
-    border: darken(_u-deepGet($basePallet, uiColor, secondary), 20%),
+    text: darken(u-deepGet($basePallet, uiColor, secondary), 20%),
+    background: u-deepGet($basePallet, uiColor, secondary),
+    border: darken(u-deepGet($basePallet, uiColor, secondary), 20%),
     hoverState:(
-      text: darken(_u-deepGet($basePallet, uiColor, secondary), 40%),
-      background: darken(_u-deepGet($basePallet, uiColor, secondary), 40%),
-      border: darken(_u-deepGet($basePallet, uiColor, secondary), 40%)
+      text: darken(u-deepGet($basePallet, uiColor, secondary), 40%),
+      background: darken(u-deepGet($basePallet, uiColor, secondary), 40%),
+      border: darken(u-deepGet($basePallet, uiColor, secondary), 40%)
     ),
   ),
   info:(
-    text: darken(_u-deepGet($basePallet, uiColor, info), 20%),
-    background: _u-deepGet($basePallet, uiColor, info),
-    border: darken(_u-deepGet($basePallet, uiColor, info), 20%),
+    text: darken(u-deepGet($basePallet, uiColor, info), 20%),
+    background: u-deepGet($basePallet, uiColor, info),
+    border: darken(u-deepGet($basePallet, uiColor, info), 20%),
     hoverState:(
-      text: darken(_u-deepGet($basePallet, uiColor, info), 40%),
-      background: darken(_u-deepGet($basePallet, uiColor, info), 40%),
-      border: darken(_u-deepGet($basePallet, uiColor, info), 40%)
+      text: darken(u-deepGet($basePallet, uiColor, info), 40%),
+      background: darken(u-deepGet($basePallet, uiColor, info), 40%),
+      border: darken(u-deepGet($basePallet, uiColor, info), 40%)
     ),
   ),
   success:(
-    text: darken(_u-deepGet($basePallet, uiColor, success), 20%),
-    background: _u-deepGet($basePallet, uiColor, success),
-    border: darken(_u-deepGet($basePallet, uiColor, success), 20%),
+    text: darken(u-deepGet($basePallet, uiColor, success), 20%),
+    background: u-deepGet($basePallet, uiColor, success),
+    border: darken(u-deepGet($basePallet, uiColor, success), 20%),
     hoverState:(
-      text: darken(_u-deepGet($basePallet, uiColor, success), 40%),
-      background: darken(_u-deepGet($basePallet, uiColor, success), 40%),
-      border: darken(_u-deepGet($basePallet, uiColor, success), 40%)
+      text: darken(u-deepGet($basePallet, uiColor, success), 40%),
+      background: darken(u-deepGet($basePallet, uiColor, success), 40%),
+      border: darken(u-deepGet($basePallet, uiColor, success), 40%)
     ),
   ),
   warning:(
-    text: darken(_u-deepGet($basePallet, uiColor, warning), 20%),
-    background: _u-deepGet($basePallet, uiColor, warning),
-    border: darken(_u-deepGet($basePallet, uiColor, warning), 20%),
+    text: darken(u-deepGet($basePallet, uiColor, warning), 20%),
+    background: u-deepGet($basePallet, uiColor, warning),
+    border: darken(u-deepGet($basePallet, uiColor, warning), 20%),
     hoverState:(
-      text: darken(_u-deepGet($basePallet, uiColor, warning), 40%),
-      background: darken(_u-deepGet($basePallet, uiColor, warning), 40%),
-      border: darken(_u-deepGet($basePallet, uiColor, warning), 40%)
+      text: darken(u-deepGet($basePallet, uiColor, warning), 40%),
+      background: darken(u-deepGet($basePallet, uiColor, warning), 40%),
+      border: darken(u-deepGet($basePallet, uiColor, warning), 40%)
     ),
   ),
   error:(
-    text: darken(_u-deepGet($basePallet, uiColor, error), 20%),
-    background: _u-deepGet($basePallet, uiColor, error),
-    border: darken(_u-deepGet($basePallet, uiColor, error), 20%),
+    text: darken(u-deepGet($basePallet, uiColor, error), 20%),
+    background: u-deepGet($basePallet, uiColor, error),
+    border: darken(u-deepGet($basePallet, uiColor, error), 20%),
     hoverState:(
-      text: darken(_u-deepGet($basePallet, uiColor, error), 40%),
-      background: darken(_u-deepGet($basePallet, uiColor, error), 40%),
-      border: darken(_u-deepGet($basePallet, uiColor, error), 40%)
+      text: darken(u-deepGet($basePallet, uiColor, error), 40%),
+      background: darken(u-deepGet($basePallet, uiColor, error), 40%),
+      border: darken(u-deepGet($basePallet, uiColor, error), 40%)
     ),
   ),
 );

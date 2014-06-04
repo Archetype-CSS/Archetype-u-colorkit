@@ -111,19 +111,19 @@ $swatch-margin: .5%;
  * Text Color Pallet Tests
  */
 .test__textColor {
-  & .strong { color: _u-deepGet($colorPallet, baseColor, strong); }
-  & .subtle { color: _u-deepGet($colorPallet, baseColor, subtle); }
-  & .muted { color: _u-deepGet($colorPallet, baseColor, muted); }
-  & .accent { color: _u-deepGet($colorPallet, baseColor, accent); }
+  & .strong { color: u-deepGet($colorPallet, baseColor, strong); }
+  & .subtle { color: u-deepGet($colorPallet, baseColor, subtle); }
+  & .muted { color: u-deepGet($colorPallet, baseColor, muted); }
+  & .accent { color: u-deepGet($colorPallet, baseColor, accent); }
 }
   
 /**
  * Background Color Tests
  */
 .test__bgColor {
-  & .strongBG { background-color: _u-deepGet($colorPallet, baseColor, strong); }
-  & .subtleBG { background-color: _u-deepGet($colorPallet, baseColor, subtle); }
-  & .mutedBG { background-color: _u-deepGet($colorPallet, baseColor, muted); }
-  & .accent { background-color: _u-deepGet($colorPallet, baseColor, accent); }
+  & .strongBG { background-color: u-deepGet($colorPallet, baseColor, strong); }
+  & .subtleBG { background-color: u-deepGet($colorPallet, baseColor, subtle); }
+  & .mutedBG { background-color: u-deepGet($colorPallet, baseColor, muted); }
+  & .accent { background-color: u-deepGet($colorPallet, baseColor, accent); }
 }
 

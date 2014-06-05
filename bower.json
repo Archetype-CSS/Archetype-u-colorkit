@@ -1,11 +1,14 @@
 {
   "name": "Archetype-u-colorkit",
-  "version": "0.1.0",
+  "version": "0.8.0",
   "author": "Sam Ashley",
-  "main": "test/_test.scss",
+  "main": "_u-colorkit.scss",
   "ignore": [
     ".*",
     "CHANGELOG.md",
     "package.json"
-  ]
-}
+  ],
+  "dependencies": {
+    "Archetype-u-componentConstructor": "~>0.8.0"
+  }
+} 

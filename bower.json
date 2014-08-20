@@ -1,6 +1,6 @@
 {
   "name": "Archetype-u-colorkit",
-  "version": "0.8.0",
+  "version": "0.8.2",
   "author": "Sam Ashley",
   "main": "_u-colorkit.scss",
   "ignore": [
